@@ -1,0 +1,10 @@
+{
+  "extName" : {
+    "message" : "Aliexpress Images Product Downloader",
+    "description" : "Extension name"
+  },
+  "extDescription" : {
+    "message" : "Download/Copy high resolution images product on Aliexpress",
+    "description" : "Extension description"
+  }
+}

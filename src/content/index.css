@@ -1,0 +1,10 @@
+.buttonDownloadALl{
+    width : 19px;
+    height: 19px;
+    cursor: hand !important;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 99999;
+}
