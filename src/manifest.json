@@ -19,6 +19,7 @@
   "permissions": [
     "*://*.aliexpress.com/*",
     "background",
+    "downloads",
     "tabs"
   ],
   "web_accessible_resources" : [
