@@ -4,7 +4,11 @@
     "description" : "Extension name"
   },
   "extDescription" : {
-    "message" : "Download/Copy high resolution images product on Aliexpress",
+    "message" : "Download high resolution images product on Aliexpress",
     "description" : "Extension description"
+  },
+  "buttonDownloadAll" :{
+    "message" : "Download all",
+    "description" : "Button tooltip"
   }
 }

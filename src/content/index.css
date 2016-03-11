@@ -1,7 +1,5 @@
 .buttonDownloadALl_detail,
 .buttonDownloadALl{
-    width : 19px;
-    height: 19px;
     cursor: hand !important;
     cursor: pointer;
 }

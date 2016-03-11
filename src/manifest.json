@@ -12,8 +12,7 @@
     "scripts": ["shared/worker_proxy.js","background/index.js"]
   },
   "page_action": {
-    "default_title": "Webpack chrome extension popup action",
-    "default_popup": "popup/index.html"
+    "default_title": "__MSG_extName__"
   },
 
   "permissions": [
