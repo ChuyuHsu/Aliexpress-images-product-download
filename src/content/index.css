@@ -1,10 +1,20 @@
+.buttonDownloadALl_detail,
 .buttonDownloadALl{
     width : 19px;
     height: 19px;
     cursor: hand !important;
     cursor: pointer;
-    top: 0;
-    left: 0;
+}
+
+.buttonDownloadALl_detail{
+    padding-left: 15px;
+    margin-left: -1px;
+    margin-bottom: 3px;
+}
+
+.buttonDownloadALl{
+
     position: absolute;
     z-index: 99999;
 }
+
