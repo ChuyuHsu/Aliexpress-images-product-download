@@ -1,10 +1,10 @@
 {
   "extName" : {
-    "message" : "Aliexpress Images Product Downloader",
+    "message" : "Download AliExpress product images",
     "description" : "Extension name"
   },
   "extDescription" : {
-    "message" : "Download high resolution images product on Aliexpress",
+    "message" : "Download high resolution images product on AliExpress",
     "description" : "Extension description"
   },
   "buttonDownloadAll" :{

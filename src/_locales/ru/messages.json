@@ -1,0 +1,14 @@
+{
+  "extName" : {
+    "message" : "Aliexpress Изображения продукта Скачать",
+    "description" : "Extension name"
+  },
+  "extDescription" : {
+    "message" : "Загрузить изображение с высоким разрешением продукта на Aliexpress",
+    "description" : "Extension description"
+  },
+  "buttonDownloadAll" :{
+    "message" : "Скачать все",
+    "description" : "Button tooltip"
+  }
+}

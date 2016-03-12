@@ -17,17 +17,23 @@
 
   "permissions": [
     "*://*.aliexpress.com/*",
+    "https://www.google-analytics.com/*",
     "background",
     "downloads",
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "web_accessible_resources" : [
       "shared/worker_proxy.html",
-      "shared/worker.js"
+      "shared/worker.js",
+      "shared/google-analytics-bundle.js"
   ],
   "icons": {
     "16": "icons/webpack-16.png",
+    "19": "icons/webpack-19.png",
+    "38": "icons/webpack-38.png",
     "32": "icons/webpack-32.png",
     "128": "icons/webpack-128.png"
-  }
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

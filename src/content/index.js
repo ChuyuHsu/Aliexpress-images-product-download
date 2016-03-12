@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './index.css';
+
 const ICON_BUTTON_DOWNLOAD_ALL = require('../icons/webpack-19.png');
 const ICON_BUTTON_DOWNLOAD_ALL2 = require('../icons/webpack-32.png');
 
@@ -73,4 +74,8 @@ function buildDownloadAllButton(productId, href, className,src) {
     return buttonDownloadALl;
 }
 
+chrome.runtime.sendMessage({
+    action : 'VIEW_PAGE',
+    data : window.location.href
+})
 

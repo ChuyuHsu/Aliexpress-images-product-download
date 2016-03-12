@@ -1,5 +1,33 @@
 import _ from 'lodash';
 
+const _AnalyticsCode = 'UA-74453743-2';
+let service, tracker;
+
+var importScript = (function (oHead) {
+    //window.analytics = analytics;
+    function loadError(oError) {
+        throw new URIError("The script " + oError.target.src + " is not accessible.");
+    }
+
+    return function (sSrc, fOnload) {
+        var oScript = document.createElement("script");
+        oScript.type = "text\/javascript";
+        oScript.onerror = loadError;
+        if (fOnload) {
+            oScript.onload = fOnload;
+        }
+        oHead.appendChild(oScript);
+        oScript.src = sSrc;
+    }
+
+})(document.head || document.getElementsByTagName("head")[0]);
+
+importScript(chrome.runtime.getURL('shared/google-analytics-bundle.js'), function () {
+    console.info('google analytics platform loaded...');
+    service = analytics.getService('aliexpress_product_images_downloader');
+    tracker = service.getTracker(_AnalyticsCode);
+});
+
 chrome.runtime.onMessage.addListener(function (msg, sender) {
     if (!msg.action) return;
 
@@ -29,6 +57,9 @@ chrome.runtime.onMessage.addListener(function (msg, sender) {
 
             }
             myWorker.postMessage(msg.data.href);
+            break;
+        case 'VIEW_PAGE':
+            if(tracker) tracker.sendAppView('App view');
             break;
     }
 });
